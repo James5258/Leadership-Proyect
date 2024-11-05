@@ -1,0 +1,70 @@
+/* Basic styling */
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #ab8855; 
+}
+header { 
+    background-color: white; 
+    color: #ab8855; 
+    padding: 1em 2em; /* Increased padding for space */
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; /* Flex layout to separate title and image */
+    position: relative; 
+}
+nav { 
+    display: flex; 
+    justify-content: center; 
+    gap: 1em; 
+}
+nav a { 
+    color: #ab8855; /* Changed to match header color for better visibility */ 
+    text-decoration: none; 
+    font-weight: bold; 
+    padding: 0.5em; 
+}
+
+/* Top-right image styling */
+.top-right-image {
+    width: 200px; /* Adjusted to 200px as requested */
+    height: auto;
+}
+
+/* Main content styling */
+.content { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 2em; 
+}
+.team-members { 
+    margin-top: 1em; 
+    display: flex; 
+    gap: 1em; 
+}
+.team-member { 
+    font-weight: bold; 
+}
+.places { 
+    display: flex; 
+    gap: 1em; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin-top: 2em; 
+}
+.place { 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+.place img { 
+    width: 250px; 
+    height: 150px; 
+    cursor: pointer; 
+    transition: transform 0.2s; 
+}
+.place img:hover { 
+    transform: scale(1.1); /* Slight zoom instead of excessive scale */
+}
