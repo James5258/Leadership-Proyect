@@ -1,0 +1,93 @@
+/* Basic styling */
+body { 
+    font-family: 'Poppins', sans-serif;
+    margin: 0; 
+    padding: 0; 
+    background-color: #ab8855; 
+}
+
+header { 
+    font-family: 'Laurentian', sans-serif;
+    background-color: white; 
+    color: #ab8855; 
+    padding: 1em 2em; 
+    text-align: center; 
+    position: relative; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+
+header h1 {
+    margin: 0;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.top-right-image {
+    width: 200px; 
+    height: auto;
+}
+
+nav {
+    display: flex; 
+    justify-content: center; 
+    gap: 1em; 
+}
+
+nav a { 
+    color: #ab8855; 
+    text-decoration: none; 
+    font-weight: bold; 
+    padding: 0.5em; 
+}
+
+/* Content styling */
+.content { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 2em; 
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* Video container styling */
+.video-container {
+    text-align: center;
+    flex: 1;
+    margin: 10px; /* Add margin between videos */
+}
+
+video {
+    width: 100%; /* Make video responsive */
+    height: auto;
+    border: 2px solid #ccc; /* Optional: Border for better separation */
+}
+
+/* Flexbox layout for video row */
+.video-row {
+    display: flex; 
+    justify-content: space-between; /* Space between videos */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 1em; /* Space between videos */
+    width: 100%;
+    max-width: 960px; /* Maximum width of the video row */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .video-row {
+        flex-direction: column; /* Stack videos vertically on small screens */
+        align-items: center; /* Center videos on mobile */
+    }
+
+    .video-container {
+        width: 100%;
+        margin-bottom: 2em; /* Space between videos on mobile */
+    }
+}

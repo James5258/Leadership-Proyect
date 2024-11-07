@@ -1,0 +1,90 @@
+/* Basic styling for the page */
+body { 
+    font-family: 'Servek', sans-serif;
+    margin: 0; 
+    padding: 0; 
+    background-color: #ab8855; 
+}
+
+/* Header Styling */
+header { 
+    font-family: 'Laurentian', sans-serif; 
+    background-color: white; 
+    color: #ab8855; 
+    padding: 1em 2em; 
+    text-align: center; 
+    position: relative; 
+}
+
+/* Title styling in header */
+header h1 {
+    margin: 0;
+}
+
+/* Styling for the main page button */
+.main-page-button {
+    display: inline-block;
+    background-color: #ab8855;
+    color: white;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+/* Styling for the survey results container */
+.survey-results {
+    padding: 2em;
+    color: #333;
+}
+
+/* Styling for the images in a row */
+.graph-images {
+    display: flex;
+    justify-content: space-between; /* Space images evenly in a row */
+    gap: 1em; /* Space between images */
+    flex-wrap: wrap; /* Allow images to wrap to the next line on smaller screens */
+    margin-top: 2em;
+}
+
+.survey-graph {
+    width: 30%; /* Adjust image size to fit in the row */
+    max-width: 300px; /* Limit the max-width for better control */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for contrast */
+    transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover effect for images */
+.survey-graph:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    /* Layout for tablets */
+    .graph-images {
+        justify-content: center; /* Center the images on tablets */
+    }
+
+    .survey-graph {
+        width: 45%; /* Increase image width for tablets */
+        max-width: 250px; /* Adjust max-width for better control */
+    }
+}
+
+@media (max-width: 600px) {
+    /* Layout for small screens (phones) */
+    .graph-images {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center the images */
+    }
+
+    .survey-graph {
+        width: 70%; /* Adjust image width for mobile screens */
+        max-width: 180px; /* Set max-width for mobile */
+        margin-bottom: 1em; /* Add space between images */
+    }
+}

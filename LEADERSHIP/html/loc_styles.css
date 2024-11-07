@@ -1,0 +1,117 @@
+/* Basic styling */
+body { 
+    font-family: 'Servek', sans-serif; /* Default font for normal text */
+    margin: 0; 
+    padding: 0; 
+    background-color: #ab8855; 
+}
+
+header { 
+    font-family: 'Laurentian', sans-serif; /* Apply Laurentian font to titles */
+    background-color: white; 
+    color: #ab8855; 
+    padding: 1em 2em; 
+    text-align: center; 
+    position: relative; 
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; /* Space out title and logo */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Title styling in header */
+header h1 {
+    margin: 0;
+    flex-grow: 1;
+    text-align: left; /* Aligns title to the left */
+}
+
+/* Top-right image styling */
+.top-right-image {
+    width: 150px; /* Adjust width as needed */
+    height: auto;
+    margin-left: auto; /* Pushes image to the far right */
+}
+
+/* Main content styling */
+.content { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 2em; 
+    color: white; 
+    text-align: center; 
+}
+
+/* Video container for smaller vertical video */
+.video-container {
+    width: 30%; 
+    max-width: 500px; 
+    aspect-ratio: 9 / 16; 
+    margin: 2em 0; 
+    display: flex; 
+    justify-content: center;
+}
+video { 
+    width: 100%; 
+    height: auto;
+    border-radius: 10px; 
+    border: 1px solid #ccc; 
+}
+.description {
+    margin-top: 1em; 
+    font-weight: bold; 
+    color: white;
+}
+
+/* Main Page Button */
+.main-page-btn {
+    margin-top: 2em;
+}
+
+.main-page-btn .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ab8855;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.main-page-btn .btn:hover {
+    background-color: #7a6239; /* Darker shade on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column; /* Stack header elements vertically */
+        align-items: center; /* Center items in column layout */
+    }
+    
+    header h1 {
+        text-align: center; /* Center the title on smaller screens */
+        margin-bottom: 0.5em; /* Add space below title */
+    }
+
+    .top-right-image {
+        margin-left: 0; /* Reset margin for center alignment */
+        width: 120px; /* Slightly smaller logo for smaller screens */
+    }
+
+    .video-container {
+        width: 80%; /* More flexible width for smaller screens */
+        max-width: none;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    .description {
+        font-size: 1.1em;
+    }
+}

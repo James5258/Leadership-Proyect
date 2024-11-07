@@ -1,0 +1,67 @@
+/* Basic styling */
+body { 
+    font-family: 'Servek', sans-serif; /* Default font for normal text */
+    margin: 0; 
+    padding: 0; 
+    background-color: #ab8855; 
+    color: #333; /* For better text visibility */
+}
+
+header { 
+    font-family: 'Laurentian', sans-serif; /* Apply Laurentian font to titles */
+    background-color: white; 
+    color: #ab8855; 
+    padding: 1em 2em; /* Padding for header spacing */
+    text-align: center; 
+    position: relative; /* Allows absolute positioning for the logo */
+}
+
+/* Styling for the main content */
+.content {
+    padding: 2em;
+    text-align: center;
+}
+
+/* Style the list of places */
+.places-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+}
+
+.places-list li {
+    margin: 1em 0;
+    font-size: 1.2em;
+}
+
+.places-list a {
+    color: #ab8855;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+.places-list a:hover {
+    border-bottom: 2px solid #ab8855;
+}
+
+/* Style the Main Page Button */
+.main-page-btn {
+    margin-top: 2em;
+}
+
+.main-page-btn .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ab8855;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.main-page-btn .btn:hover {
+    background-color: #7a6239; /* Darker shade on hover */
+}
